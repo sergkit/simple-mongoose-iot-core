@@ -1,0 +1,31 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/oauthcallback",
+        "function": "oauthcallback"
+      },
+      {
+        "source": "/authgoogleapi",
+        "function": "authgoogleapi"
+      },
+      {
+        "source": "/testsheetwrite",
+        "function": "testsheetwrite"
+      },
+      {
+        "source": "/relayCloudIot",
+        "function": "relayCloudIot"
+      }
+    ]
+}
+}

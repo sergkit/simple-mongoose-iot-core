@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Показания датчиков</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Подключение  скриптов firebase:
+  https://firebase.google.com/docs/web/setup?authuser=0#host_your_web_app_using_firebase_hosting
+         -->
+        <script defer src="/__/firebase/5.8.3/firebase-app.js"></script>
+        <script defer src="/__/firebase/5.8.3/firebase-database.js"></script>
+        <script defer src="/__/firebase/init.js"></script>
+        <!-- Подключение  Plotly.js -->
+        <script defer src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script defer src="https://momentjs.com/downloads/moment.js"></script>
+        <!-- подключение рабочего скрипта -->
+        <script defer src="script.js"></script>   
+    </head>
+
+    <body>
+        <h1 style="text-align: center; margin: 0">Показания датчиков </h1>
+       <!-- div для рисования графиков -->
+        <div id="DistancePlot" style="width: 100vw; max-height:45vh"></div>
+        <div id="LightPlot" style="width: 100vw; max-height:45vh"></div>
+
+
+    </body>
+
+</html>
